@@ -5,26 +5,20 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import java.awt.Color;
 import javax.swing.JPanel;
-import java.awt.BorderLayout;
-import javax.swing.BoxLayout;
-import javax.swing.JInternalFrame;
 import java.awt.Font;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
-import javax.swing.border.LineBorder;
-import java.awt.GridLayout;
 import java.awt.GridBagLayout;
 import java.awt.GridBagConstraints;
 import java.awt.Insets;
-import javax.swing.JButton;
-import java.awt.FlowLayout;
-import java.awt.LayoutManager;
-import javax.swing.border.Border;
+
 import javax.swing.BorderFactory;
+import javax.swing.JButton;
 import javax.swing.border.TitledBorder;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-
+import javax.swing.SwingConstants;
+import javax.swing.border.EtchedBorder;
 public class Overtimesalary {
 
 	private JFrame frmGeorgetownCleaningServices;
@@ -92,17 +86,20 @@ public class Overtimesalary {
 		frmGeorgetownCleaningServices.getContentPane().add(lblNewLabel_2);
 		
 		textFieldempname = new JTextField();
+		textFieldempname.setFont(new Font("Segoe UI", Font.PLAIN, 13));
 		textFieldempname.setBounds(220, 48, 187, 19);
 		frmGeorgetownCleaningServices.getContentPane().add(textFieldempname);
 		textFieldempname.setColumns(10);
 		
 		textFieldhourlysalary = new JTextField();
+		textFieldhourlysalary.setHorizontalAlignment(SwingConstants.RIGHT);
+		textFieldhourlysalary.setFont(new Font("Segoe UI", Font.PLAIN, 13));
 		textFieldhourlysalary.setBounds(544, 48, 105, 19);
 		frmGeorgetownCleaningServices.getContentPane().add(textFieldhourlysalary);
 		textFieldhourlysalary.setColumns(10);
 		
 		JPanel panelTimeSheet = new JPanel();
-		panelTimeSheet.setBorder(new TitledBorder(null, "Time Sheet", TitledBorder.LEADING, TitledBorder.TOP, null, null));
+		panelTimeSheet.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(210,210,210), new Color(208, 201, 176)), "Time Sheet", TitledBorder.LEADING, TitledBorder.TOP, null, new Color(0, 0, 0)));
 		panelTimeSheet.setBackground(new Color(208, 201, 176));
 		panelTimeSheet.setBounds(20, 134, 790, 117);
 		frmGeorgetownCleaningServices.getContentPane().add(panelTimeSheet);
@@ -179,6 +176,8 @@ public class Overtimesalary {
 		panelTimeSheet.add(lblNewLabel_20, gbc_lblNewLabel_20);
 		
 		textFieldMonday1 = new JTextField();
+		textFieldMonday1.setFont(new Font("Segoe UI", Font.PLAIN, 13));
+		textFieldMonday1.setHorizontalAlignment(SwingConstants.RIGHT);
 		GridBagConstraints gbc_textFieldMonday1 = new GridBagConstraints();
 		gbc_textFieldMonday1.insets = new Insets(0, 0, 5, 5);
 		gbc_textFieldMonday1.fill = GridBagConstraints.HORIZONTAL;
@@ -188,6 +187,8 @@ public class Overtimesalary {
 		textFieldMonday1.setColumns(10);
 		
 		textFieldTuesday1 = new JTextField();
+		textFieldTuesday1.setHorizontalAlignment(SwingConstants.RIGHT);
+		textFieldTuesday1.setFont(new Font("Segoe UI", Font.PLAIN, 13));
 		GridBagConstraints gbc_textFieldTuesday1 = new GridBagConstraints();
 		gbc_textFieldTuesday1.insets = new Insets(0, 0, 5, 5);
 		gbc_textFieldTuesday1.fill = GridBagConstraints.HORIZONTAL;
@@ -197,6 +198,8 @@ public class Overtimesalary {
 		textFieldTuesday1.setColumns(10);
 		
 		textFieldWednesday1 = new JTextField();
+		textFieldWednesday1.setFont(new Font("Segoe UI", Font.PLAIN, 13));
+		textFieldWednesday1.setHorizontalAlignment(SwingConstants.RIGHT);
 		GridBagConstraints gbc_textFieldWednesday1 = new GridBagConstraints();
 		gbc_textFieldWednesday1.insets = new Insets(0, 0, 5, 5);
 		gbc_textFieldWednesday1.fill = GridBagConstraints.HORIZONTAL;
@@ -206,6 +209,8 @@ public class Overtimesalary {
 		textFieldWednesday1.setColumns(10);
 		
 		textFieldThursday1 = new JTextField();
+		textFieldThursday1.setHorizontalAlignment(SwingConstants.RIGHT);
+		textFieldThursday1.setFont(new Font("Segoe UI", Font.PLAIN, 13));
 		GridBagConstraints gbc_textFieldThursday1 = new GridBagConstraints();
 		gbc_textFieldThursday1.insets = new Insets(0, 0, 5, 5);
 		gbc_textFieldThursday1.fill = GridBagConstraints.HORIZONTAL;
@@ -215,6 +220,8 @@ public class Overtimesalary {
 		textFieldThursday1.setColumns(10);
 		
 		textFieldFriday1 = new JTextField();
+		textFieldFriday1.setFont(new Font("Segoe UI", Font.PLAIN, 13));
+		textFieldFriday1.setHorizontalAlignment(SwingConstants.RIGHT);
 		GridBagConstraints gbc_textFieldFriday1 = new GridBagConstraints();
 		gbc_textFieldFriday1.insets = new Insets(0, 0, 5, 5);
 		gbc_textFieldFriday1.fill = GridBagConstraints.HORIZONTAL;
@@ -224,6 +231,8 @@ public class Overtimesalary {
 		textFieldFriday1.setColumns(10);
 		
 		textFieldSat1 = new JTextField();
+		textFieldSat1.setHorizontalAlignment(SwingConstants.RIGHT);
+		textFieldSat1.setFont(new Font("Segoe UI", Font.PLAIN, 13));
 		GridBagConstraints gbc_textFieldSat1 = new GridBagConstraints();
 		gbc_textFieldSat1.insets = new Insets(0, 0, 5, 5);
 		gbc_textFieldSat1.fill = GridBagConstraints.HORIZONTAL;
@@ -233,6 +242,8 @@ public class Overtimesalary {
 		textFieldSat1.setColumns(10);
 		
 		textFieldSunday1 = new JTextField();
+		textFieldSunday1.setFont(new Font("Segoe UI", Font.PLAIN, 13));
+		textFieldSunday1.setHorizontalAlignment(SwingConstants.RIGHT);
 		GridBagConstraints gbc_textFieldSunday1 = new GridBagConstraints();
 		gbc_textFieldSunday1.insets = new Insets(0, 0, 5, 0);
 		gbc_textFieldSunday1.fill = GridBagConstraints.HORIZONTAL;
@@ -251,6 +262,8 @@ public class Overtimesalary {
 		panelTimeSheet.add(lblNewLabel_21, gbc_lblNewLabel_21);
 		
 		textFieldMonday2 = new JTextField();
+		textFieldMonday2.setHorizontalAlignment(SwingConstants.RIGHT);
+		textFieldMonday2.setFont(new Font("Segoe UI", Font.PLAIN, 13));
 		GridBagConstraints gbc_textFieldMonday2 = new GridBagConstraints();
 		gbc_textFieldMonday2.insets = new Insets(0, 0, 0, 5);
 		gbc_textFieldMonday2.fill = GridBagConstraints.HORIZONTAL;
@@ -260,6 +273,8 @@ public class Overtimesalary {
 		textFieldMonday2.setColumns(10);
 		
 		textFieldTuesday2 = new JTextField();
+		textFieldTuesday2.setFont(new Font("Segoe UI", Font.PLAIN, 13));
+		textFieldTuesday2.setHorizontalAlignment(SwingConstants.RIGHT);
 		GridBagConstraints gbc_textFieldTuesday2 = new GridBagConstraints();
 		gbc_textFieldTuesday2.insets = new Insets(0, 0, 0, 5);
 		gbc_textFieldTuesday2.fill = GridBagConstraints.HORIZONTAL;
@@ -269,6 +284,8 @@ public class Overtimesalary {
 		textFieldTuesday2.setColumns(10);
 		
 		textFieldWednesday2 = new JTextField();
+		textFieldWednesday2.setHorizontalAlignment(SwingConstants.RIGHT);
+		textFieldWednesday2.setFont(new Font("Segoe UI", Font.PLAIN, 13));
 		GridBagConstraints gbc_textFieldWednesday2 = new GridBagConstraints();
 		gbc_textFieldWednesday2.insets = new Insets(0, 0, 0, 5);
 		gbc_textFieldWednesday2.fill = GridBagConstraints.HORIZONTAL;
@@ -278,6 +295,8 @@ public class Overtimesalary {
 		textFieldWednesday2.setColumns(10);
 		
 		textFieldThursday2 = new JTextField();
+		textFieldThursday2.setFont(new Font("Segoe UI", Font.PLAIN, 13));
+		textFieldThursday2.setHorizontalAlignment(SwingConstants.RIGHT);
 		GridBagConstraints gbc_textFieldThursday2 = new GridBagConstraints();
 		gbc_textFieldThursday2.insets = new Insets(0, 0, 0, 5);
 		gbc_textFieldThursday2.fill = GridBagConstraints.HORIZONTAL;
@@ -287,6 +306,8 @@ public class Overtimesalary {
 		textFieldThursday2.setColumns(10);
 		
 		textFieldFriday2 = new JTextField();
+		textFieldFriday2.setHorizontalAlignment(SwingConstants.RIGHT);
+		textFieldFriday2.setFont(new Font("Segoe UI", Font.PLAIN, 13));
 		GridBagConstraints gbc_textFieldFriday2 = new GridBagConstraints();
 		gbc_textFieldFriday2.insets = new Insets(0, 0, 0, 5);
 		gbc_textFieldFriday2.fill = GridBagConstraints.HORIZONTAL;
@@ -296,6 +317,8 @@ public class Overtimesalary {
 		textFieldFriday2.setColumns(10);
 		
 		textFieldSat2 = new JTextField();
+		textFieldSat2.setFont(new Font("Segoe UI", Font.PLAIN, 13));
+		textFieldSat2.setHorizontalAlignment(SwingConstants.RIGHT);
 		GridBagConstraints gbc_textFieldSat2 = new GridBagConstraints();
 		gbc_textFieldSat2.insets = new Insets(0, 0, 0, 5);
 		gbc_textFieldSat2.fill = GridBagConstraints.HORIZONTAL;
@@ -305,6 +328,8 @@ public class Overtimesalary {
 		textFieldSat2.setColumns(10);
 		
 		textFieldSunday2 = new JTextField();
+		textFieldSunday2.setHorizontalAlignment(SwingConstants.RIGHT);
+		textFieldSunday2.setFont(new Font("Segoe UI", Font.PLAIN, 13));
 		GridBagConstraints gbc_textFieldSunday2 = new GridBagConstraints();
 		gbc_textFieldSunday2.fill = GridBagConstraints.HORIZONTAL;
 		gbc_textFieldSunday2.gridx = 7;
@@ -315,30 +340,30 @@ public class Overtimesalary {
 		JButton btnProcessIt = new JButton("Process It");
 		btnProcessIt.setFont(new Font("Segoe UI", Font.PLAIN, 13));
 		btnProcessIt.setBackground(new Color(208, 201, 176));
+	    btnProcessIt.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
 		btnProcessIt.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			String empname= textFieldempname.getText();
-			double hourlysal=Integer.parseInt(textFieldhourlysalary.getText());
-			hourlysal=Math.round(hourlysal);
+			double hourlysal = Double.parseDouble(textFieldhourlysalary.getText());
 			double mon1,tue1,wed1,thur1,fri1,sat1,sun1,mon2,tue2,wed2,thur2,fri2,sat2,sun2;
-	        mon1=Integer.parseInt(textFieldMonday1.getText());
-			tue1=Integer.parseInt(textFieldTuesday1.getText());
-			wed1=Integer.parseInt(textFieldWednesday1.getText());
-			thur1=Integer.parseInt(textFieldThursday1.getText());
-			fri1=Integer.parseInt(textFieldFriday1.getText());
-			sat1=Integer.parseInt(textFieldSat1.getText());
-			sun1=Integer.parseInt(textFieldSunday1.getText());
-			mon2=Integer.parseInt(textFieldMonday2.getText());
-			tue2=Integer.parseInt(textFieldTuesday2.getText());
-			wed2=Integer.parseInt(textFieldWednesday2.getText());
-			thur2=Integer.parseInt(textFieldThursday2.getText());
-			fri2=Integer.parseInt(textFieldFriday2.getText());
-			sat2=Integer.parseInt(textFieldSat2.getText());
-			sun2=Integer.parseInt(textFieldSunday2.getText());
+	        mon1=Double.parseDouble(textFieldMonday1.getText());
+			tue1=Double.parseDouble(textFieldTuesday1.getText());
+			wed1=Double.parseDouble(textFieldWednesday1.getText());
+			thur1=Double.parseDouble(textFieldThursday1.getText());
+			fri1=Double.parseDouble(textFieldFriday1.getText());
+			sat1=Double.parseDouble(textFieldSat1.getText());
+			sun1=Double.parseDouble(textFieldSunday1.getText());
+			mon2=Double.parseDouble(textFieldMonday2.getText());
+			tue2=Double.parseDouble(textFieldTuesday2.getText());
+			wed2=Double.parseDouble(textFieldWednesday2.getText());
+			thur2=Double.parseDouble(textFieldThursday2.getText());
+			fri2=Double.parseDouble(textFieldFriday2.getText());
+			sat2=Double.parseDouble(textFieldSat2.getText());
+			sun2=Double.parseDouble(textFieldSunday2.getText());
 			double days[]= {mon1,tue1,wed1,thur1,fri1,sat1,sun1,mon2,tue2,wed2,thur2,fri2,sat2,sun2};
 			double regular=0;
 			double overtime=0;
-			for(int i=0;i<=14;i++) {
+			for(int i=0;i<14;i++) {
 				if(days[i]<8) {
 					regular+=days[i];
 				}else {
@@ -347,7 +372,11 @@ public class Overtimesalary {
 				}
 			}
 			double amount=regular*hourlysal;
-			double overamount=overtime*27.28;
+			double overtimerate=27.78;
+			double overamount=overtime*overtimerate;
+			overamount= overamount*100;
+			overamount= Math.round(overamount);
+			overamount= overamount/100;
 			double netpay=amount+overamount;
 			textFieldreghours.setText(String.valueOf(regular));
 			textFieldregamount.setText(String.valueOf(amount));
@@ -364,12 +393,20 @@ public class Overtimesalary {
 		frmGeorgetownCleaningServices.getContentPane().add(lblNewLabel_5);
 		
 		textFieldnetpay = new JTextField();
+		textFieldnetpay.setFont(new Font("Segoe UI", Font.PLAIN, 13));
+		textFieldnetpay.setHorizontalAlignment(SwingConstants.RIGHT);
 		textFieldnetpay.setEditable(false);
 		textFieldnetpay.setBounds(599, 367, 96, 19);
 		frmGeorgetownCleaningServices.getContentPane().add(textFieldnetpay);
 		textFieldnetpay.setColumns(10);
 		
 		JButton btnClose = new JButton("Close");
+		btnClose.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
+		btnClose.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+		    frmGeorgetownCleaningServices.setVisible(false);
+			}
+		});
 		btnClose.setForeground(new Color(0, 0, 0));
 		btnClose.setFont(new Font("Segoe UI", Font.PLAIN, 13));
 		btnClose.setBackground(new Color(208, 201, 176));
@@ -413,6 +450,8 @@ public class Overtimesalary {
 		panel_1.add(lblNewLabel_6, gbc_lblNewLabel_6);
 		
 		textFieldreghours = new JTextField();
+		textFieldreghours.setFont(new Font("Segoe UI", Font.PLAIN, 13));
+		textFieldreghours.setHorizontalAlignment(SwingConstants.RIGHT);
 		textFieldreghours.setEditable(false);
 		GridBagConstraints gbc_textFieldreghours = new GridBagConstraints();
 		gbc_textFieldreghours.insets = new Insets(0, 0, 5, 5);
@@ -423,6 +462,8 @@ public class Overtimesalary {
 		textFieldreghours.setColumns(10);
 		
 		textFieldregamount = new JTextField();
+		textFieldregamount.setHorizontalAlignment(SwingConstants.RIGHT);
+		textFieldregamount.setFont(new Font("Segoe UI", Font.PLAIN, 13));
 		textFieldregamount.setEditable(false);
 		GridBagConstraints gbc_textFieldregamount = new GridBagConstraints();
 		gbc_textFieldregamount.insets = new Insets(0, 0, 5, 0);
@@ -442,6 +483,8 @@ public class Overtimesalary {
 		panel_1.add(lblNewLabel_7, gbc_lblNewLabel_7);
 		
 		textFieldoverhours = new JTextField();
+		textFieldoverhours.setHorizontalAlignment(SwingConstants.RIGHT);
+		textFieldoverhours.setFont(new Font("Segoe UI", Font.PLAIN, 13));
 		textFieldoverhours.setEditable(false);
 		GridBagConstraints gbc_textFieldoverhours = new GridBagConstraints();
 		gbc_textFieldoverhours.insets = new Insets(0, 0, 0, 5);
@@ -452,6 +495,8 @@ public class Overtimesalary {
 		textFieldoverhours.setColumns(10);
 		
 		textFieldoveramount = new JTextField();
+		textFieldoveramount.setFont(new Font("Segoe UI", Font.PLAIN, 13));
+		textFieldoveramount.setHorizontalAlignment(SwingConstants.RIGHT);
 		textFieldoveramount.setEditable(false);
 		GridBagConstraints gbc_textFieldoveramount = new GridBagConstraints();
 		gbc_textFieldoveramount.fill = GridBagConstraints.HORIZONTAL;
@@ -461,14 +506,14 @@ public class Overtimesalary {
 		textFieldoveramount.setColumns(10);
 		
 		JPanel panelPayrollP = new JPanel();
-		panelPayrollP.setBorder(new TitledBorder(null, "Payroll Processing", TitledBorder.LEADING, TitledBorder.TOP, null, null));
+		panelPayrollP.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(210,210,210), new Color(208, 201, 176)), "Payroll Processing", TitledBorder.LEADING, TitledBorder.TOP, null,new Color(0, 0, 0) ));
 		panelPayrollP.setBackground(new Color(208, 201, 176));
 		panelPayrollP.setBounds(20, 310, 790, 141);
 		frmGeorgetownCleaningServices.getContentPane().add(panelPayrollP);
 		
 	
 		JPanel panelEmp_Id = new JPanel();
-		panelEmp_Id.setBorder(new TitledBorder(null, "Employee Identification", TitledBorder.LEADING, TitledBorder.TOP, null, null));
+		panelEmp_Id.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(210,210,210), new Color(208, 201, 176)), "Employee Identification", TitledBorder.LEADING, TitledBorder.TOP, null,new Color(0, 0, 0)));
 		panelEmp_Id.setBackground(new Color(208, 201, 176));
 		panelEmp_Id.setBounds(20, 10, 790, 93);
 		frmGeorgetownCleaningServices.getContentPane().add(panelEmp_Id);
